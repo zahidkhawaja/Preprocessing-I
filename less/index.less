@@ -60,14 +60,26 @@ table {
 @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
+// Variables
 @title-font: 'Comfortaa', cursive;
 @standard-font: 'Open Sans', sans-serif;
 
-html {
-	font-size: 62.5%;
+//Mix-ins
+.center() {
 	display: flex;
 	justify-content: center;
+}
+
+.removeDecor() {
+	text-decoration: none;
+	color: black;
+}
+
+html {
+	.center();
+	font-size: 62.5%;
 	padding-top: 25px;
+	background-color: FloralWhite;
 }
 
 html, body {
@@ -100,14 +112,13 @@ ul {
 	margin-left: 25px;
 }
 
+// Nested
 .top {
-	display: flex;
-	justify-content: center;
+	.center();
 	margin-bottom: 25px;
 	
 	.navigation a {
-	text-decoration: none;
-	color: black;
+		.removeDecor();
 }
 }
 
@@ -129,9 +140,9 @@ body {
 	flex-direction: column;
 }
 
+// Nested
 .profilepic {
-	display: flex;
-	justify-content: center;
+	.center();
 	
 	img {
 	border-radius: 50%;
@@ -140,25 +151,24 @@ body {
 }
 }
 
+// Nested
 .profileblock {
 	margin-bottom: 20px;
 	
 	h1, h3, p, a {
-	display: flex;
-	justify-content: center;
+		.center();
 }
 }
 
+// Nested
 .contactbutton {
-	display: flex;
-	justify-content: center;
-	margin-top: 15px;
+	.center();
 	
 	a {
-	text-decoration: none;
+	.removeDecor();
 	width: 15%;
-	color: black;
 	border: 2px solid black;
+	border-radius: 15px;
 	
 	&:hover {
 	background-color: lightgray;
@@ -177,10 +187,10 @@ body {
 	width: 50%;
 }
 
+// Nested
 .workhistory {
-	display: flex;
+	.center();
 	flex-direction: column;
-	justify-content: center;
 	
 	h2 {
 	text-align: center;
@@ -211,6 +221,7 @@ table, th, td {
   footer {
 	  text-align: center;
 	  margin-top: 5%;
+	  margin-bottom: 2%;
   }
 
 

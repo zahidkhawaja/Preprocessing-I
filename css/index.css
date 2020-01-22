@@ -149,10 +149,11 @@ table {
   src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
 }
 html {
-  font-size: 62.5%;
   display: flex;
   justify-content: center;
+  font-size: 62.5%;
   padding-top: 25px;
+  background-color: FloralWhite;
 }
 html,
 body {
@@ -232,13 +233,13 @@ body {
 .contactbutton {
   display: flex;
   justify-content: center;
-  margin-top: 15px;
 }
 .contactbutton a {
   text-decoration: none;
-  width: 15%;
   color: black;
+  width: 15%;
   border: 2px solid black;
+  border-radius: 15px;
 }
 .contactbutton a:hover {
   background-color: lightgray;
@@ -254,8 +255,8 @@ body {
 }
 .workhistory {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
 }
 .workhistory h2 {
   text-align: center;
@@ -285,4 +286,5 @@ table#t01 {
 footer {
   text-align: center;
   margin-top: 5%;
+  margin-bottom: 2%;
 }
