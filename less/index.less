@@ -60,6 +60,9 @@ table {
 @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
+@title-font: 'Comfortaa', cursive;
+@standard-font: 'Open Sans', sans-serif;
+
 html {
 	font-size: 62.5%;
 	display: flex;
@@ -72,7 +75,7 @@ html, body {
 }
 
 h1, h2, h4, h5, h6 {
-	font-family: 'Comfortaa', cursive;
+	font-family: @title-font;
 }
 
 h1 {
@@ -89,7 +92,7 @@ h3 {
 
 p, h3, a, ol, ul, table {
 	font-size: 1.8rem;
-	font-family: 'Open Sans', sans-serif;
+	font-family: @standard-font;
 }
 
 ul {
@@ -195,7 +198,7 @@ table, th, td {
   }
   tr:first-child {
 	font-weight: bold;
-	font-family: 'Comfortaa', cursive;
+	font-family: @standard-font;
   }
   th, td {
 	padding: 15px;
