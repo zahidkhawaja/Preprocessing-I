@@ -256,7 +256,8 @@ p,
 h3,
 a,
 ol,
-ul {
+ul,
+table {
   font-size: 1.8rem;
   font-family: 'Open Sans', sans-serif;
 }
@@ -271,6 +272,7 @@ table {
 }
 tr:first-child {
   font-weight: bold;
+  font-family: 'Comfortaa', cursive;
 }
 th,
 td {
