@@ -186,7 +186,7 @@ table {
 }
 ul {
   list-style-type: circle;
-  margin-left: 25px;
+  margin-left: 50px;
 }
 .top {
   display: flex;
@@ -247,12 +247,18 @@ body {
 }
 .firstrow {
   margin-bottom: 15px;
+  margin-top: 15px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
-.introduction {
-  margin-bottom: 15px;
-  width: 50%;
+.introduction,
+.skills {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 49%;
+  height: 25%;
 }
 .workhistory {
   display: flex;
@@ -262,6 +268,7 @@ body {
 .workhistory h2 {
   text-align: center;
   margin-bottom: 15px;
+  margin-top: 15px;
 }
 table {
   width: 50%;
