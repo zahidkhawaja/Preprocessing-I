@@ -233,6 +233,7 @@ body {
 .contactbutton {
   display: flex;
   justify-content: center;
+  margin-top: 15px;
 }
 .contactbutton a {
   text-decoration: none;
