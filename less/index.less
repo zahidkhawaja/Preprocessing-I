@@ -50,10 +50,201 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	max-width: 100%;
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+	border:1px solid grey;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+// Variables
+@title-font: 'Comfortaa', cursive;
+@standard-font: 'Open Sans', sans-serif;
+
+//Mix-ins
+.center() {
+	display: flex;
+	justify-content: center;
+}
+.removeDecor() {
+	text-decoration: none;
+	color: black;
+}
+
+html {
+	.center();
+	font-size: 62.5%;
+	padding-top: 25px;
+	background-color: FloralWhite;
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
 }
+
+h1, h2, h4, h5, h6 {
+	font-family: @title-font;
+}
+
+h1 {
+	font-size: 3.75rem;
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+h3 {
+	font-size: 2rem;
+}
+
+p, h3, a, ol, ul, table {
+	font-size: 1.8rem;
+	font-family: @standard-font;
+}
+
+ul {
+	list-style-type: circle;
+	margin-left: 50px;
+}
+
+// Nested
+.top {
+	.center();
+	margin-bottom: 25px;
+	
+	.navigation a {
+		.removeDecor();
+}
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	width: 80%;
+
+}
+
+body {
+	font-size: 1.8rem;
+	width: 90%;
+	line-height:1.5;
+}
+
+.bodycontainer {
+	display: flex;
+	flex-direction: column;
+}
+
+// Nested
+.profilepic {
+	.center();
+	
+	img {
+	border-radius: 50%;
+	width: 20%;
+	margin-bottom: 10px;
+}
+}
+
+// Nested
+.profileblock {
+	margin-bottom: 20px;
+	
+	h1, h3, p, a {
+		.center();
+}
+}
+
+// Nested
+.contactbutton {
+	.center();
+	margin-top: 15px;
+	
+	a {
+	.removeDecor();
+	width: 25%;
+	height: 40px;
+	border: 2px solid black;
+	border-radius: 15px;
+	align-items: center;
+	
+	&:hover {
+	background-color: lightgray;
+	}
+}
+}
+
+.firstrow {
+	margin-bottom: 15px;
+	margin-top: 15px;
+	display: flex;
+	justify-content: space-evenly;
+
+	@media (max-width: 500px) {
+		flex-direction: column;
+	}
+}
+
+.introduction, .skills {
+	.center();
+	flex-direction: column;
+	text-align: center;
+	width: 49%;
+	height: 25%;
+
+	@media (max-width: 500px) {
+		width: 95%;
+		padding-bottom: 5%;
+	}
+}
+
+// Nested
+.workhistory {
+	.center();
+	flex-direction: column;
+	
+	h2 {
+	text-align: center;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+}
+
+table {
+	width: 50%;
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+  }
+  tr:first-child {
+	font-weight: bold;
+	font-family: @standard-font;
+  }
+  th, td {
+	padding: 15px;
+	text-align: center;
+  }
+  table#t01 {
+	width: 50%;    
+  }
+
+  footer {
+	  text-align: center;
+	  margin-top: 5%;
+	  margin-bottom: 2%;
+  }
+
+  .profileinfo {
+  @media (max-width: 500px) {
+	  text-align: center;
+}
+}
+
+
 

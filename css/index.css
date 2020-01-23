@@ -1,1 +1,317 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 1px solid grey;
+}
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/comfortaa/v27/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4WjMDrMfJQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
+}
+html {
+  display: flex;
+  justify-content: center;
+  font-size: 62.5%;
+  padding-top: 25px;
+  background-color: FloralWhite;
+}
+html,
+body {
+  height: 100%;
+}
+h1,
+h2,
+h4,
+h5,
+h6 {
+  font-family: 'Comfortaa', cursive;
+}
+h1 {
+  font-size: 3.75rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2rem;
+}
+p,
+h3,
+a,
+ol,
+ul,
+table {
+  font-size: 1.8rem;
+  font-family: 'Open Sans', sans-serif;
+}
+ul {
+  list-style-type: circle;
+  margin-left: 50px;
+}
+.top {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.top .navigation a {
+  text-decoration: none;
+  color: black;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+body {
+  font-size: 1.8rem;
+  width: 90%;
+  line-height: 1.5;
+}
+.bodycontainer {
+  display: flex;
+  flex-direction: column;
+}
+.profilepic {
+  display: flex;
+  justify-content: center;
+}
+.profilepic img {
+  border-radius: 50%;
+  width: 20%;
+  margin-bottom: 10px;
+}
+.profileblock {
+  margin-bottom: 20px;
+}
+.profileblock h1,
+.profileblock h3,
+.profileblock p,
+.profileblock a {
+  display: flex;
+  justify-content: center;
+}
+.contactbutton {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.contactbutton a {
+  text-decoration: none;
+  color: black;
+  width: 25%;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 15px;
+  align-items: center;
+}
+.contactbutton a:hover {
+  background-color: lightgray;
+}
+.firstrow {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .firstrow {
+    flex-direction: column;
+  }
+}
+.introduction,
+.skills {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 49%;
+  height: 25%;
+}
+@media (max-width: 500px) {
+  .introduction,
+  .skills {
+    width: 95%;
+    padding-bottom: 5%;
+  }
+}
+.workhistory {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.workhistory h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+table {
+  width: 50%;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+tr:first-child {
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+}
+th,
+td {
+  padding: 15px;
+  text-align: center;
+}
+table#t01 {
+  width: 50%;
+}
+footer {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+@media (max-width: 500px) {
+  .profileinfo {
+    text-align: center;
+  }
+}
