@@ -238,9 +238,11 @@ body {
 .contactbutton a {
   text-decoration: none;
   color: black;
-  width: 15%;
+  width: 25%;
+  height: 40px;
   border: 2px solid black;
   border-radius: 15px;
+  align-items: center;
 }
 .contactbutton a:hover {
   background-color: lightgray;
@@ -251,6 +253,11 @@ body {
   display: flex;
   justify-content: space-evenly;
 }
+@media (max-width: 500px) {
+  .firstrow {
+    flex-direction: column;
+  }
+}
 .introduction,
 .skills {
   display: flex;
@@ -259,6 +266,13 @@ body {
   text-align: center;
   width: 49%;
   height: 25%;
+}
+@media (max-width: 500px) {
+  .introduction,
+  .skills {
+    width: 95%;
+    padding-bottom: 5%;
+  }
 }
 .workhistory {
   display: flex;
@@ -295,4 +309,9 @@ footer {
   text-align: center;
   margin-top: 5%;
   margin-bottom: 2%;
+}
+@media (max-width: 500px) {
+  .profileinfo {
+    text-align: center;
+  }
 }
